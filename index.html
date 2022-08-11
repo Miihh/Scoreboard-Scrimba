@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scoreboard.css">
+</head>
+<body>
+    <div class="scoreboard-container">
+                <!-- HOME -->
+        <div class="home-container">
+            <div class="teams-names-div"> 
+                <p class="teams">HOME</p>
+            </div>
+            <div class="score">
+                <span id="score-displayed-home" class="score-number">0</span>
+            </div>
+            <div class="buttons-container">
+                <button onclick="add1PointHome()" class="button1">+1</button>
+                <button onclick="add2PointsHome()" class="button">+2</button>
+                <button onclick="add3PointsHome()" class="button">+3</button>
+            </div>
+        </div>
+                <!-- New Game -->
+                <div class="new-game-div">
+                    <button onclick="newGame()" class="new-game-btn">New Game</button>
+                </div>
+                <!-- AWAY -->
+        <div class="home-container">
+            <p class="teams">AWAY</p>
+            <div class="score">
+                <span id="score-displayed-away" class="score-number">0</span>
+            </div>
+            <div class="buttons-container">
+                <button onclick="add1PointAway()" class="button1">+1</button>
+                <button onclick="add2PointsAway()" class="button">+2</button>
+                <button onclick="add3PointsAway()" class="button">+3</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="./scoreboard.js"></script>
+</body>
+</html>
